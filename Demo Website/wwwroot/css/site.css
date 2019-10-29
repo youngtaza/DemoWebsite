@@ -29,6 +29,21 @@ body {
     margin: 15px;
 }
 
+/* Footer CSS*/
+.footerbar {
+    width: 100%;
+    background-color: #222222;
+    border: solid 1px #222222;
+    box-shadow: 0px 0px 3px #222222;
+}
+
+    .footerbar .footerbar-text {
+        color: #ffffff;
+        padding: 15px;
+        display: inline-block;
+    }
+
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
