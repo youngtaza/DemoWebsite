@@ -34,10 +34,15 @@
 				<a asp-page="/Index" class="navbar-brand">Demo_Website</a>
 			</div>
 			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a asp-page="/Index">Home</a></li>
-					<li><a asp-page="/About">About</a></li>
-					<li><a asp-page="/Contact">Contact</a></li>
+				<ul class="nav navbar-nav nav-horizontal">
+					<li id="navitem_1" class="navbar-item"><a asp-page="/Index" class="navbar-itemlink">Home</a></li>
+					<li id="navitem_2" class="navbar-item navbar-collapsed" onmouseover="AddExpandedClass();" onmouseout="RemoveExpandedClass();"><a asp-page="/About" class="navbar-itemlink">About</a><span class="navbar-expandbutton" onclick="AddExpandedClass();" ><i id="navitem_expcolbtn1" class="fas fa-angle-down"></i></span>
+                    <ul class="nav-vertical">
+                        <li id="navitem_2_1" class="navbar-item"><a asp-page="/Contributors" class="navbar-itemlink">Contributors</a></li>
+                        <li id="navitem_2_2" class="navbar-item"><a asp-page="/Mission" class="navbar-itemlink">Mission</a></li>
+                    </ul>
+                    </li>
+					<li id="navitem_3" class="navbar-item"><a asp-page="/Contact" class="navbar-itemlink">Contact</a></li>
 				</ul>
 			</div>
 		</div>

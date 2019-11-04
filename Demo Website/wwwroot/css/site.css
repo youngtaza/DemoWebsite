@@ -43,11 +43,75 @@ body {
         display: inline-block;
     }
 
+    /* Navbar CSS */
+
+    .navbar .nav-vertical {
+        display: none;
+        z-index: 11;
+        position: absolute;
+        list-style: none;
+        background-color: #d9d9d9;
+        padding: 0px;
+        border: solid 1px #d9d9d9;
+        box-shadow: 1px 2px 5px #a0a0a0;
+    }
+
+    .navbar .nav-horizontal .navbar-item:hover .nav-vertical
+    {
+        display: block;
+    }
+
+    .navbar .nav-vertical .navbar-itemlink
+    {
+        color: #222222;
+        padding: 5px 20px;
+        display: block;
+        padding-left: 10px;
+        text-decoration: none !important;
+    }
+
+    .navbar .nav-vertical .navbar-item:hover
+    {
+        background-color: #a0a0a0;
+        text-decoration: none;
+    }
+
+    .navbar .nav-horizontal .navbar-expanded
+    {
+        background-color: #989898;
+    }
+
+    .navbar .nav-horizontal .navbar-expanded > .navbar-itemlink
+    {
+        color: #ffffff;
+    }
+
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+
+    .navbar .navbar-collapsed .navbar-itemlink,
+    .navbar .navbar-expanded .navbar-itemlink 
+    {
+        width: 90%;
+        display: inline-block;
+    }
+
+    .navbar-expandbutton
+    {
+        display: inline-block;
+        height: 40px;
+        width: 10%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar .nav-vertical {
+        position: relative;
     }
 }
