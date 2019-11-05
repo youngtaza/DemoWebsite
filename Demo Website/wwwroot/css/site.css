@@ -86,6 +86,11 @@ body {
         color: #ffffff;
     }
 
+    .navbar-expandbutton
+    {
+        display: none;
+    }
+
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
@@ -113,5 +118,10 @@ body {
 
     .navbar .nav-vertical {
         position: relative;
+    }
+
+    .navbar .navbar-collapsed .nav-vertical
+    {
+        display: none !important;
     }
 }
