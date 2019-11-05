@@ -116,8 +116,18 @@ body {
         padding: 10px;
     }
 
+    .navbar-collapsed .navbar-expandbutton .navbar-faicon
+    {
+        color: #989898;
+    }
+
+    .navbar-expanded .navbar-expandbutton .navbar-faicon {
+        color: #ffffff;
+    }
+
     .navbar .nav-vertical {
         position: relative;
+        box-shadow: none;
     }
 
     .navbar .navbar-collapsed .nav-vertical
